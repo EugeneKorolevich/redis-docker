@@ -1,10 +1,32 @@
-# <a name="about"></a>About
+Redis
+============
 
-This image contains an installation Redis 5.x.
+Dockerfile source for WordPress [docker](https://docker.io) image.
+
+## Upstream
+
+This source repo was originally copied from:
+https://github.com/docker-library/redis
+
+
+## Disclaimer
+
+This is not an official Google product.
+
+## About
+
+This image contains an installation Redis. 
 
 For more information, see the [Official Image Marketplace Page](https://console.cloud.google.com/marketplace/details/google/redis5).
 
-Pull command (first install [gcloud](https://cloud.google.com/sdk/downloads)):
+### Prerequisites
+
+Configure [gcloud](https://cloud.google.com/sdk/gcloud/) as a Docker credential helper:
+
+```shell
+gcloud auth configure-docker
+```
+### Pull command
 
 ```shell
 gcloud docker -- pull marketplace.gcr.io/google/redis5
